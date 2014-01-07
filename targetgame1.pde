@@ -1,4 +1,3 @@
-
 class Aimer{ // creating object Aimer
   int r,x,y; // creating variables for the radius and x,y values
   color c; //setting variable for collor of aimer
@@ -124,11 +123,7 @@ class Target1
   }
 
 
-import ddf.minim.*;
 
-Minim minim;
-AudioPlayer player;
-AudioInput input;
 Target[] target;//importing class Target1
 Target1[] target1;
 Aimer aim;
@@ -169,10 +164,7 @@ void setup()
 
   b = loadImage("background.png"); // loading image of background
   
-  
-  minim = new Minim(this);
-  player = minim.loadFile("hello.mp3");
-  input = minim.getLineIn();
+
 
 }
 
@@ -216,17 +208,4 @@ void setup()
   
   }
   
-  void mousePressed()
-{
-  player.play();
-}
-
-void mouseReleased()
-{
-  player.close();
-
- 
-  player = minim.loadFile("hello.mp3");
-}
-
-
+  
